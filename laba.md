@@ -300,3 +300,63 @@ WYSIWYG — это сокращение от английского выраже
 **Задание 36**
 
 ![image](https://github.com/user-attachments/assets/d5d16701-d1cf-4cd9-bac1-206533c3f4ee)
+
+**Задание 37**
+
+![image](https://github.com/user-attachments/assets/fcb08f77-f7de-4bfc-8b11-8285ddd3358d)
+
+**Задание 38**
+
+![image](https://github.com/user-attachments/assets/88ced843-f76d-437b-9ed9-2721918f1c6c)
+
+
+**Задание 39**
+
+При переключение на предыдущую сохраненную версию пропадает созданная диаграмма draw.io
+
+**Задание 40**
+
+![image](https://github.com/user-attachments/assets/f82173f1-93a9-452c-8a3f-69ed87055b2e)
+
+
+**Задание 41**
+
+![image](https://github.com/user-attachments/assets/1c514c26-6557-40b1-82e2-b8985bde01e3)
+
+
+**Задание 42**
+
+Вот объяснение каждого параметра в командах docker run -d -p 8080:8080 plantuml/plantuml-server:jetty и docker run -d -p 8080:8080 plantuml/plantuml-server:tomcat.
+Общая структура команды
+Команда docker run используется для создания и запуска контейнера из указанного образа.
+Параметры команд
+1. docker run:
+    * Это команда для запуска нового контейнера из указанного образа.
+2. -d:
+    * Этот флаг означает "отключенный режим" (detached mode). Контейнер будет запущен в фоновом режиме, и вы получите ID контейнера, не привязывая терминал к его выводу.
+3. -p 8080:8080:
+    * Этот параметр указывает на проброс портов. Формат -p [HOST_PORT]:[CONTAINER_PORT].
+    * В данном случае, порт 8080 на хосте (вашем компьютере) будет связан с портом 8080 внутри контейнера. Это позволяет вам обращаться к приложению, работающему в контейнере, через http://localhost:8080.
+4. plantuml/plantuml-server:jetty и plantuml/plantuml-server:tomcat:
+    * Это указание на образ, который будет использоваться для создания контейнера.
+    * plantuml/plantuml-server:jetty — это образ PlantUML, использующий сервер Jetty.
+    * plantuml/plantuml-server:tomcat — это образ PlantUML, использующий сервер Tomcat.
+    * Часть после двоеточия (:) указывает на тег образа, который может обозначать версию или конфигурацию.
+    
+Резюме
+  * Первая команда запускает PlantUML сервер с использованием Jetty в фоновом режиме и связывает порты 8080.
+  * Вторая команда делает то же самое, но с использованием Tomcat в качестве сервера.
+
+**Задание 43**
+
+добавил цвета:
+
+![image](https://github.com/user-attachments/assets/83d4845f-d194-42a0-900b-8e109c08cdf7)
+
+View as svg:
+
+![image](https://github.com/user-attachments/assets/72a5b8e8-ac71-4318-af3a-60d1ed0c525f)
+
+Изменил настрйки вывода на pdf:
+
+![image](https://github.com/user-attachments/assets/b29788f4-2721-47db-b2f8-5b555fc59bd7)
